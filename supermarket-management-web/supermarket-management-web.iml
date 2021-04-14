@@ -21,6 +21,9 @@
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring/springmvc.xml</file>
         </fileset>
+        <fileset id="web supermarket-management-web servlet context" name="MVC supermarket-management-web servlet context" removed="true">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/springmvc.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

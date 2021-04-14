@@ -9,7 +9,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class ItemCatServiceImpl implements ItemCatService {
+public class ItemCatServiceImpl extends BaseServiceImpl<ItemCat> implements ItemCatService{
+    @Override
+    public List<ItemCat> queryItemCatByParentId(Long parentId) {
+        ItemCat itemCat = new ItemCat();
+        itemCat.setParentId(parentId);
+        List<ItemCat> list = super.queryListByWhere(itemCat);
+        return list;
+    }
+
+    /**
   @Autowired
     private ItemCatMapper itemCatMapper;
 
@@ -18,4 +27,5 @@ public class ItemCatServiceImpl implements ItemCatService {
         PageHelper.startPage(page,rows);
         return this.itemCatMapper.select(null);
     }
+    */
 }

@@ -1,6 +1,10 @@
 package com.supermarket.management.pojo;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table(name = "tb_item_cat")
 public class ItemCat extends BasePojo {
@@ -69,5 +73,10 @@ public class ItemCat extends BasePojo {
     public void setIsParent(Boolean isParent) {
         this.isParent = isParent;
     }
-
+    public String getText(){
+        return this.getName();
+    }
+    public String getState(){
+        return this.isParent?"closed":"open";
+    }
 }

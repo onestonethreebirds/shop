@@ -32,6 +32,7 @@
 
 	<dubbo:service interface="com.supermarket.management.service.TestService" ref="testServiceImpl"/>
     <dubbo:service interface="com.supermarket.management.service.ItemCatService" ref="itemCatServiceImpl"/>
-
+	<dubbo:service interface="com.supermarket.management.service.ItemService" ref="itemServiceImpl"/>
+	<dubbo:service interface="com.supermarket.management.service.ItemDescService" ref="itemDescServiceImpl"/>
 
 </beans>

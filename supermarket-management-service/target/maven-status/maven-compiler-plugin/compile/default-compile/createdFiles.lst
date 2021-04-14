@@ -1,2 +1,5 @@
+com\supermarket\management\service\impl\ItemServiceImpl.class
+com\supermarket\management\service\impl\BaseServiceImpl.class
 com\supermarket\management\service\impl\ItemCatServiceImpl.class
+com\supermarket\management\service\impl\ItemDescServiceImpl.class
 com\supermarket\management\service\impl\TestServiceImpl.class

@@ -1,2 +1,4 @@
 com\supermarket\management\controller\ItemCatController.class
+com\supermarket\management\controller\ItemController.class
+com\supermarket\management\controller\PageController.class
 com\supermarket\management\controller\TestController.class
