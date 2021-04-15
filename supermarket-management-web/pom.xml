@@ -20,6 +20,21 @@
             <artifactId>supermarket-management-interface</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.supermarket</groupId>
+            <artifactId>supermarket-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.supermarket.httpclient</groupId>
+            <artifactId>supermarket-httpclient</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>fastdfs_client</groupId>
+            <artifactId>fastdfs_client</artifactId>
+            <version>1.25</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
