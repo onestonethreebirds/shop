@@ -38,5 +38,7 @@
 	<dubbo:reference interface="com.supermarket.management.service.ItemCatService" id="itemCatService" timeout="1000000"/>
 	<dubbo:reference interface="com.supermarket.management.service.ItemService" id="itemService" timeout="1000000" />
 	<dubbo:reference interface="com.supermarket.management.service.ItemDescService" id="itemDescService" timeout="1000000"/>
+	<dubbo:reference interface="com.supermarket.management.service.ContentService" id="contentService" timeout="1000000" />
+	<dubbo:reference interface="com.supermarket.management.service.ContentCategoryService" id="contentCategoryService" timeout="1000000"/>
 </beans>
 

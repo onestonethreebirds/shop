@@ -1,5 +1,7 @@
-com\supermarket\management\service\BaseService.class
 com\supermarket\management\service\TestService.class
 com\supermarket\management\service\ItemService.class
 com\supermarket\management\service\ItemDescService.class
+com\supermarket\management\service\BaseService.class
+com\supermarket\management\service\ContentCategoryService.class
 com\supermarket\management\service\ItemCatService.class
+com\supermarket\management\service\ContentService.class
