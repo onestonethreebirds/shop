@@ -2,11 +2,13 @@ package com.supermarket.management.service.impl;
 import com.supermarket.management.pojo.ContentCategory;
 import com.supermarket.management.service.ContentCategoryService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Transactional
 public class ContentCategoryServiceImpl extends BaseServiceImpl<ContentCategory> implements ContentCategoryService {
 
 

@@ -2,20 +2,20 @@ package com.supermarket.management.controller;
 
 import com.supermarket.common.pojo.SupermarketResult;
 import com.supermarket.management.pojo.Content;
-import com.supermarket.management.pojo.ContentCategory;
-import com.supermarket.management.service.ContentCategoryService;
 import com.supermarket.management.service.ContentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
+import java.util.List;
+
 @RequestMapping("content")
 @Controller
 public class ContentController {
-    @Autowired
+    @Resource
     private ContentService contentService;
 
     @RequestMapping(method = RequestMethod.POST)
@@ -29,7 +29,7 @@ public class ContentController {
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public SupermarketResult<Content> queryContentList(@RequestParam(value = "id",defaultValue = "0") Long categoryId,
+    public SupermarketResult<Content> queryContentList(Long categoryId,
                                                        @RequestParam(value = "page",defaultValue = "1") Integer page,
                                                        @RequestParam(value = "rows",defaultValue = "20") Integer rows){
 
@@ -37,6 +37,34 @@ public class ContentController {
         SupermarketResult<Content> supermarketResult=this.contentService.queryContentList(categoryId,page,rows);
 
         return supermarketResult;
+
+    }
+    @RequestMapping(value = "edit",method = RequestMethod.POST)
+    @ResponseBody
+    public String edit(Content content){
+        String status="200";
+        try {
+            this.contentService.updateByIdSelective(content);
+        }catch (Exception e){
+            e.printStackTrace();
+            status="500";
+        }
+
+        return status;
+
+    }
+    @RequestMapping(value = "delete",method = RequestMethod.POST)
+    @ResponseBody
+    public String delete(Long id){
+
+        String status="200";
+        try{
+            this.contentService.deleteContent(id);
+        }catch (Exception e){
+            e.printStackTrace();
+            status="500";
+        }
+        return status;
 
     }
 }

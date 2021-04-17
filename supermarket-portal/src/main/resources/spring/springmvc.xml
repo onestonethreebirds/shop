@@ -7,9 +7,9 @@
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-<!--
+
 	<context:property-placeholder location="classpath:resource/env.properties"/>
-	-->
+
 	<!-- 配置controller扫描 -->
 	<context:component-scan base-package="com.supermarket.portal.controller" />
 
@@ -36,11 +36,6 @@
 	<dubbo:registry protocol="zookeeper" address="192.168.37.161:2181"/>
 
 	<!-- 声明要调用的服务，timeout是设置连接超时最长时间,如果不设置，超时时间默认是3秒 -->
-	<!--
-	<dubbo:reference interface="com.supermarket.management.service.TestService" id="testService" timeout="1000000" />
-	<dubbo:reference interface="com.supermarket.management.service.ItemCatService" id="itemCatService" timeout="1000000"/>
-	<dubbo:reference interface="com.supermarket.management.service.ItemService" id="itemService" timeout="1000000" />
-	<dubbo:reference interface="com.supermarket.management.service.ItemDescService" id="itemDescService" timeout="1000000"/>
-    -->
+	<dubbo:reference interface="com.supermarket.management.service.ContentService" id="contentService" timeout="1000000" />
 </beans>
 

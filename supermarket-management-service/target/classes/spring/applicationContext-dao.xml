@@ -16,7 +16,7 @@
 	
 	<!-- 数据库连接池 -->
 	<!-- 加载属性 文件 -->
-	<context:property-placeholder location="classpath:resource/db.properties"/>
+	<context:property-placeholder location="classpath:resource/*.properties"/>
 	<!-- 数据库连接池 -->
 	<bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
 		<property name="driverClass" value="${jdbc.driver}"/>
