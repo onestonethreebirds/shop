@@ -5,3 +5,4 @@ com\supermarket\management\controller\PicUploadController.class
 com\supermarket\management\controller\ContentController.class
 com\supermarket\management\controller\PageController.class
 com\supermarket\management\controller\TestController.class
+com\supermarket\management\controller\ItemInterfaceController.class

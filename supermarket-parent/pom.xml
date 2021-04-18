@@ -11,6 +11,8 @@
         <module>../supermarket-management</module>
         <module>../supermarket-management-web</module>
         <module>../supermarket-portal</module>
+        <module>../supermarket-sso</module>
+        <module>../supermarket-sso-web</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 集中定义依赖版本号 -->
