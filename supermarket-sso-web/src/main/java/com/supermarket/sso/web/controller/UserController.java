@@ -1,9 +1,7 @@
 package com.supermarket.sso.web.controller;
-
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.supermarket.management.pojo.User;
 import com.supermarket.sso.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -19,13 +17,19 @@ public class UserController {
     @Resource
     private UserService userService;
     @RequestMapping(value = "check/{param}/{type}",method = RequestMethod.GET)
-    public ResponseEntity<Boolean> check(@PathVariable("param") String param, @PathVariable("type") Integer type){
+    public ResponseEntity<String> check(@PathVariable("param") String param, @PathVariable("type") Integer type,String callback){
         if(type<1||type>3){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
         try {
-           Boolean bool=this.userService.check(param,type);
-           return ResponseEntity.ok(bool);
+           Boolean result=this.userService.check(param,type);
+           String resultStr="";
+           if(StringUtils.isNotBlank(callback)){
+               resultStr=callback+"("+result+")";
+           }else {
+               resultStr+=result;
+           }
+           return ResponseEntity.ok(resultStr);
         }catch(Exception e){
             e.printStackTrace();
         }

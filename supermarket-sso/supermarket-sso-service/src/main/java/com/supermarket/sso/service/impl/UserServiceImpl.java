@@ -5,12 +5,14 @@ import com.supermarket.management.mapper.UserMapper;
 import com.supermarket.management.pojo.User;
 import com.supermarket.sso.redis.RedisUtils;
 import com.supermarket.sso.service.UserService;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -22,6 +24,8 @@ public class UserServiceImpl implements UserService {
 
     @Value("${SSO_TICKET_KEY}")
     private String SSO_TICKET_KEY;
+    @Value("${SSO_TICKET_KEY_INCR}")
+    private String SSO_TICKET_KEY_INCR;
 
     @Override
     public Boolean check(String param, Integer type) {
@@ -69,4 +73,49 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Override
+    public void doRegister(User user) {
+        user.setCreated(new Date());
+        user.setUpdated(user.getCreated());
+
+        // 需要给用户密码进行加密，保证密码安全，我们使用MD5加密
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+
+        // 保存用户
+        this.userMapper.insert(user);
+
+    }
+
+    @Override
+    public String doLogin(User user) {
+        // 根据用户名和密码查询用户
+        // 设置密码加密，因为数据是用md5加密的
+        user.setUsername(user.getUsername());
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+        User result = this.userMapper.selectOne(user);
+
+        // 判断用户是否为空，如果不为空表示登录成功
+        if (result != null) {
+            try {
+                // 生成唯一数ticket,可是使用redis的唯一数+用户id
+                String ticket = "" + this.redisUtils.incr(this.SSO_TICKET_KEY_INCR) + result.getId();
+
+                // 把ticket和用户数据放到redis中,模拟session，原来的session有效时间是半小时
+                this.redisUtils.set(this.SSO_TICKET_KEY+ ticket, MAPPER.writeValueAsString(result), 60 * 30);
+
+                // 返回ticket
+                return ticket;
+
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+        // 如果查询的用户为空，返回空
+        return null;
+    }
+
 }
+
+

@@ -69,5 +69,13 @@
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
+    <!-- 配置springMVC映射 -->
+    <servlet-mapping>
+        <servlet-name>supermarket-portal</servlet-name>
+        <!-- 所有以html结尾的请求进入springMVC -->
+        <!-- 伪静态，SEO优化 -->
+        <url-pattern>/service/*</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

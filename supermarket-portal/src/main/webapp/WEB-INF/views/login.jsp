@@ -223,7 +223,7 @@
 	                    var obj = eval(result);
 	                    if (obj.status == 200) {
                     		//登录成功，跳转到首页
-                    		obj.success = "http://www.taotao.com/";
+                    		obj.success = "http://www.supermarket.com/";
 	                        var isIE = !-[1,];
 	                        if (isIE) {
 	                            var link = document.createElement("a");

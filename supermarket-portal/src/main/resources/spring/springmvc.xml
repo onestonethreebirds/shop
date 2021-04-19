@@ -37,5 +37,6 @@
 
 	<!-- 声明要调用的服务，timeout是设置连接超时最长时间,如果不设置，超时时间默认是3秒 -->
 	<dubbo:reference interface="com.supermarket.management.service.ContentService" id="contentService" timeout="1000000" />
+	<dubbo:reference interface="com.supermarket.sso.service.UserService" id="userService" timeout="1000000"/>
 </beans>
 
