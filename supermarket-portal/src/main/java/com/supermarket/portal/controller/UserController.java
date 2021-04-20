@@ -57,7 +57,6 @@ public class UserController {
         if (StringUtils.isNotBlank(ticket)) {
             // 如果登录成功ticket需要放到cookie中
             CookieUtils.setCookie(request, response, this.TT_TICKET, ticket, 60 * 60 * 24, true);
-
             // 封装返回数据
             Map<String, Object> map = new HashMap<>();
             map.put("status", "200");
