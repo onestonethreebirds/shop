@@ -1,0 +1,7 @@
+com\supermarket\management\mapper\ContentMapper.class
+com\supermarket\management\mapper\ItemCatMapper.class
+com\supermarket\management\mapper\TestMapper.class
+com\supermarket\management\mapper\ItemMapper.class
+com\supermarket\management\mapper\UserMapper.class
+com\supermarket\management\mapper\ContentCategoryMapper.class
+com\supermarket\management\mapper\ItemDescMapper.class

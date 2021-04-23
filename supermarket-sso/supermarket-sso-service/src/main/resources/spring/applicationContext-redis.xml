@@ -54,6 +54,6 @@
 -->
     <!-- 配置操作集群版实现类 -->
     <!--
-    <bean id="clusterJedisClient" class="com.supermarket.sso.redis.impl.RedisCluster"></bean>
+    <bean id="clusterJedisClient" class="RedisCluster"></bean>
 -->
 </beans>

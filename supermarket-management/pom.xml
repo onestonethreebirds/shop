@@ -11,24 +11,12 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>../supermarket-management-pojo</module>
-        <module>../supermarket-management-mapper</module>
-        <module>../supermarket-management-interface</module>
-        <module>../supermarket-management-service</module>
+        <module>supermarket-management-pojo</module>
+        <module>supermarket-management-mapper</module>
+        <module>supermarket-management-interface</module>
+        <module>supermarket-management-service</module>
     </modules>
     <artifactId>supermarket-management</artifactId>
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.2</version>
-            <configuration>
-                <port>8080</port>
-                <path>/</path>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+
 
 </project>

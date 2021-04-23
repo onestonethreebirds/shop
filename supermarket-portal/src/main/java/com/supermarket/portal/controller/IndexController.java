@@ -1,8 +1,6 @@
 package com.supermarket.portal.controller;
 
 import com.supermarket.management.service.ContentService;
-import org.apache.jute.Index;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

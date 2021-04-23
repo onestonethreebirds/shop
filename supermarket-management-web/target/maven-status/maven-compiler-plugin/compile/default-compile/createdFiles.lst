@@ -1,8 +1,8 @@
-com\supermarket\management\controller\ItemCatController.class
-com\supermarket\management\controller\ContentCategoryController.class
-com\supermarket\management\controller\ItemController.class
-com\supermarket\management\controller\PicUploadController.class
-com\supermarket\management\controller\ContentController.class
-com\supermarket\management\controller\PageController.class
-com\supermarket\management\controller\TestController.class
-com\supermarket\management\controller\ItemInterfaceController.class
+com\supermarket\management\web\controller\ItemController.class
+com\supermarket\management\web\controller\ItemInterfaceController.class
+com\supermarket\management\web\controller\PageController.class
+com\supermarket\management\web\controller\ContentCategoryController.class
+com\supermarket\management\web\controller\ItemCatController.class
+com\supermarket\management\web\controller\TestController.class
+com\supermarket\management\web\controller\PicUploadController.class
+com\supermarket\management\web\controller\ContentController.class
