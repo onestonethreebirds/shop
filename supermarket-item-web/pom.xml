@@ -19,6 +19,7 @@
         <artifactId>supermarket-management-interface</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </dependency>
+
 </dependencies>
     <name>supermarket-item-web</name>
    <build>

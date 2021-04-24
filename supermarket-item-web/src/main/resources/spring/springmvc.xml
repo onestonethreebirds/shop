@@ -38,4 +38,5 @@
     id="itemService" timeout="1000000" />
     <dubbo:reference interface="com.supermarket.management.service.ItemDescService"
                      id="itemDescService" timeout="1000000"/>
+
 </beans>

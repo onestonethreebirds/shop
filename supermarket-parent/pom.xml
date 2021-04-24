@@ -17,6 +17,7 @@
         <module>../supermarket-search</module>
         <module>../supermarket-search-web</module>
         <module>../supermarket-item-web</module>
+        <module>../supermarket-cart</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 集中定义依赖版本号 -->

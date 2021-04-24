@@ -1,33 +1,27 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="supermarket-portal:war exploded">
-    <output-path>$PROJECT_DIR$/supermarket-portal/target/supermarket-portal</output-path>
+  <artifact type="exploded-war" name="supermarket-cart-service:war exploded">
+    <output-path>$PROJECT_DIR$/supermarket-cart/supermarket-cart-service/target/supermarket-cart-service</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>supermarket-portal</module>
+        <module>supermarket-cart-service</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="supermarket-portal" />
+          <element id="module-output" name="supermarket-cart-service" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="supermarket-management-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="supermarket-management-interface" />
+          <element id="archive" name="supermarket-cart-interface-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="supermarket-cart-interface" />
           </element>
           <element id="archive" name="supermarket-management-pojo-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="supermarket-management-pojo" />
           </element>
-          <element id="archive" name="supermarket-common-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="supermarket-common" />
-          </element>
-          <element id="archive" name="supermarket-sso-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="supermarket-sso-interface" />
-          </element>
-          <element id="archive" name="supermarket-cart-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="supermarket-cart-interface" />
+          <element id="archive" name="supermarket-management-mapper-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="supermarket-management-mapper" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.1.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.3.RELEASE" />
@@ -90,9 +84,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/supermarket-portal/target/supermarket-portal/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/supermarket-cart/supermarket-cart-service/target/supermarket-cart-service/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="supermarket-portal/web/Web" />
+      <element id="javaee-facet-resources" facet="supermarket-cart-service/web/Web" />
     </root>
   </artifact>
 </component>
