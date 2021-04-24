@@ -360,7 +360,7 @@ $("#loginname,#nloginpwd, #authcode").bind('keyup', function (event) {
     }
 });
 //$("#loginsubmit").click(function () {
-//    var loginUrl = "../uc/loginService";
+//   var loginUrl = "../uc/loginService";
 //    var flag = validateFunction.FORM_validate();
 //    if (flag) {
 //        var uuid = $("#uuid").val();

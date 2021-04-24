@@ -6,5 +6,6 @@ com\supermarket\management\service\impl\ItemCatServiceImpl.class
 com\supermarket\management\service\impl\ItemDescServiceImpl.class
 com\supermarket\management\service\impl\TestServiceImpl.class
 com\supermarket\management\redis\impl\RedisPool.class
+com\supermarket\management\service\impl\ItemServiceImpl$1.class
 com\supermarket\management\service\impl\ContentServiceImpl.class
 com\supermarket\management\service\impl\BaseServiceImpl.class

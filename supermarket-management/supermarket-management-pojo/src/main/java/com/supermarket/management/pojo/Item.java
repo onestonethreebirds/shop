@@ -1,5 +1,7 @@
 package com.supermarket.management.pojo;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.text.DecimalFormat;
 
 import javax.persistence.Column;
@@ -121,6 +123,12 @@ public class Item extends BasePojo {
         this.status = status;
     }
 
+    public String[] getImages(){
+        if(StringUtils.isNotBlank(this.getImage())){
+            return StringUtils.split(this.getImage(),",");
+        }
+        return null;
+    }
     @Override
     public String toString() {
         return "Item [id=" + id + ", title=" + title + ", sellPoint=" + sellPoint + ", price=" + price
