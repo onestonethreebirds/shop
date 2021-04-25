@@ -200,6 +200,7 @@
    });
    
    $("#loginsubmit").click(function () {
+       var redirectURL = "${redirectURL}";
 	    var flag = validateFunction.FORM_validate();
 	    if (flag) {
 	        var uuid = $("#uuid").val();
@@ -222,8 +223,12 @@
 	                if (result) {
 	                    var obj = eval(result);
 	                    if (obj.status == 200) {
-                    		//登录成功，跳转到首页
-                    		obj.success = "http://www.supermarket.com/";
+	                        if(redirectURL){
+	                            obj.success=redirectURL;
+                            }else {
+                                //登录成功，跳转到首页
+                                obj.success = "http://www.supermarket.com/";
+                            }
 	                        var isIE = !-[1,];
 	                        if (isIE) {
 	                            var link = document.createElement("a");
