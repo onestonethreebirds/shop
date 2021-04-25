@@ -6,7 +6,7 @@
 <!--shortcut end-->
 <div id="o-header-2013">
 	<div class="w" id="header-2013">
-		<div id="logo-2013" class="ld"><a href="http://www.taotao.com/" hidefocus="true" clstag="homepage|keycount|home2013|02a"><b></b><img src="/images/taotao-logo.gif" width="270" height="60" alt="淘淘"></a></div>
+		<div id="logo-2013" class="ld"><a href="http://www.supermarket.com/" hidefocus="true" clstag="homepage|keycount|home2013|02a"><b></b><img src="/images/taotao-logo.gif" width="270" height="60" alt="淘淘"></a></div>
 		<!--logo end-->
 		<div id="search-2013">
 			<div class="i-search ld">
@@ -141,7 +141,7 @@
 			</div>
 			<div id="treasure" clstag="homepage|keycount|home2013|08a"></div>
 				<ul id="navitems-2013">
-					<li class="fore1" id="nav-home" clstag="homepage|keycount|home2013|07a"><a href="http://www.taotao.com/">首页</a></li>
+					<li class="fore1" id="nav-home" clstag="homepage|keycount|home2013|07a"><a href="http://www.supermarket.com/">首页</a></li>
 					<li class="fore2" id="nav-fashion" clstag="homepage|keycount|home2013|07b"><a href="http://fashion.jd.com/">服装城</a></li>
 					<li class="fore3" id="nav-chaoshi" clstag="homepage|keycount|home2013|07c"><a href="http://channel.jd.com/chaoshi.html">食品</a></li>
 					<li class="fore4" id="nav-tuan" clstag="homepage|keycount|home2013|07d"><a href="http://tuan.jd.com/" target="_blank">团购</a></li>

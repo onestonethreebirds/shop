@@ -25,7 +25,7 @@
 <!--shortcut end-->
 
 <div class="w w1 header clearfix">
-    <div id="logo"><a href="http://www.taotao.com/"><img src="/images/taotao-logo.gif" alt="淘淘商城"></a></div>
+    <div id="logo"><a href="http://www.supermarket.com/"><img src="/images/taotao-logo.gif" alt="淘淘商城"></a></div>
 </div>
 <!-- /header -->
 <!--/ /widget/header/header.tpl -->
@@ -226,11 +226,11 @@ $('.online-payment')
         <div class="goods-item goods-item-extra">
     
 				<div class="p-img">
-					<a target="_blank" href="http://www.taotao.com/item/${cart.itemId}.html"><img src="${cart.itemImage}" alt=""></a>
+					<a target="_blank" href="http://www.supermarket.com/item/${cart.itemId}.html"><img src="${cart.itemImage}" alt=""></a>
 				</div>
 				<div class="goods-msg">					
 					<div class="p-name">
-					     <a href="http://www.taotao.com/item/${cart.itemId}.html" target="_blank">
+					     <a href="http://www.supermarket.com/item/${cart.itemId}.html" target="_blank">
 					           ${cart.itemTitle }				     
 					     </a>
 					</div>

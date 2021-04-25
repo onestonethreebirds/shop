@@ -29,7 +29,7 @@ public class SolrjCloudTest {
 	@Test
 	public void testCreate() throws Exception {
 		// 1. 创建HttpSolrServer，传入接口地址
-		//HttpSolrServer solrServer = new HttpSolrServer("http://solr.taotao.com/solr/");
+		//HttpSolrServer solrServer = new HttpSolrServer("http://solr.supermarket.com/solr/");
 		// 2. 创建SolrInputDocument对象，调用add方法构建文档内容
 		SolrInputDocument doc = new SolrInputDocument();
 		doc.addField("id", "test_003");

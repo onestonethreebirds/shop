@@ -1,6 +1,6 @@
 package com.supermarket.cart.redis.impl;
 
-import com.supermarket.management.redis.RedisUtils;
+import com.supermarket.cart.redis.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.JedisCluster;
 

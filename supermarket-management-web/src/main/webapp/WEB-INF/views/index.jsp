@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>淘淘商城后台管理系统</title>
-<jsp:include page="/commons/common-js.jsp"></jsp:include>
+<jsp:include page="../commons/common-js.jsp"></jsp:include>
 <style type="text/css">
 	.content {
 		padding: 10px 10px 10px 10px;

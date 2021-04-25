@@ -141,7 +141,7 @@
 				<li id="choose-btns">
 					<div id="choose-btn-append"  class="btn">
 							<!-- <a class="btn-append " id="InitCartUrl" href="http://www.supermarket.com/cart/add/${item.id}.html" clstag="shangpin|keycount|product|initcarturl">加入购物车<b></b></a> -->
-					             <a class="btn-append"  id="InCartUrl" href="#" onclick="submitItem()" clstag="shangpin"/>
+						<a class="btn-append"  id="InitCartUrl" href="#" onclick="submitItem()" clstag="shangpin|keycount|product|initcarturl">加入购物车<b><a></a>
 					</div>
 					<div id="choose-btn-easybuy" class="btn"></div>
 					<div id="choose-btn-divide" class="btn"></div>

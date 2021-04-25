@@ -27,7 +27,7 @@ public class TestSolrj {
     @Test
     public void testSolrAddAndUpdate() throws Exception{
         // 1. 创建HttpSolrServer，传入接口地址
-      //  HttpSolrServer httpSolrServer = new HttpSolrServer("http://solr.taotao.com/solr/");
+      //  HttpSolrServer httpSolrServer = new HttpSolrServer("http://solr.supermarket.com/solr/");
         // 2. 创建SolrInputDocument对象，调用add方法构建文档内容
         SolrInputDocument document = new SolrInputDocument();
         document.addField("id", "test_solr_id");

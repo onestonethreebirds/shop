@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>管理员登录</title>
-<jsp:include page="../../commons/common-js.jsp"></jsp:include>
+<jsp:include page="../commons/common-js.jsp"></jsp:include>
 </head>
 <body style="background-color: #F3F3F3">
     <div class="easyui-dialog" title="管理员登录" data-options="closable:false,draggable:false" style="width:400px;height:300px;padding:10px;">

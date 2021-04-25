@@ -64,8 +64,8 @@ public class ItemMessageListener implements MessageListener {
     @Autowired
     private ItemDescService itemDescService;
 
-    @Value("${SUPERMARKET_ITEM_HTML_PATH}")
-    private String SUPERMARKET_ITEM_HTML_PATH;
+    @Value("${ITEM_SUPERMARKET_HTML_PATH}")
+    private String ITEM_SUPERMARKET_HTML_PATH;
 
     private void genHtml(long itemId) throws Exception {
         // 获取freemarker的核心对象，使用spring整合的对象获取
@@ -82,7 +82,7 @@ public class ItemMessageListener implements MessageListener {
         root.put("itemDesc", this.itemDescService.queryById(itemId));
 
         // 使用模板输出静态页面
-        Writer out = new FileWriter(new File(this.SUPERMARKET_ITEM_HTML_PATH + itemId + ".html"));
+        Writer out = new FileWriter(new File(this.ITEM_SUPERMARKET_HTML_PATH + itemId + ".html"));
         template.process(root, out);
 
     }

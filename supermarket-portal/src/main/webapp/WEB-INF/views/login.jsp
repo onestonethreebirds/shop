@@ -44,7 +44,7 @@
 <body>
 <div class="w">
     <div id="logo">
-    	<a href="http://www.taotao.com/" clstag="passport|keycount|login|01">
+    	<a href="http://www.supermarket.com/" clstag="passport|keycount|login|01">
     		<img src="/images/taotao-logo.gif" alt="淘淘" width="170" height="60"/>
     	</a><b></b>
    	</div>
@@ -174,7 +174,7 @@
                 </div>
         </div>
         <div class="free-regist">
-            <span><a href="http://www.taotao.com/page/register.html" clstag="passport|keycount|login|08">免费注册&gt;&gt;</a></span>
+            <span><a href="http://www.supermarket.com/page/register.html" clstag="passport|keycount|login|08">免费注册&gt;&gt;</a></span>
         </div>
     </div>
 </form>

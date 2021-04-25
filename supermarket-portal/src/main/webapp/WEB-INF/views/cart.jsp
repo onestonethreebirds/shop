@@ -22,7 +22,7 @@
 <jsp:include page="../commons/shortcut.jsp" />
 <!--shortcut end-->
 <div class="w w1 header clearfix">
-	<div id="logo"><a href="http://www.taotao.com/"><img clstag="clickcart|keycount|xincart|logo" src="/images/taotao-logo.gif" title="返回淘淘商城首页" alt="返回淘淘商城首页"></a></div>
+	<div id="logo"><a href="http://www.supermarket.com/"><img clstag="clickcart|keycount|xincart|logo" src="/images/taotao-logo.gif" title="返回淘淘商城首页" alt="返回淘淘商城首页"></a></div>
     <div class="language"><a href="javascript:void(0);" onclick="toEnCart()"></a></div>
 	<div class="progress clearfix">
 		<ul class="progress-1">
@@ -64,12 +64,12 @@
 		            <div class="cell p-checkbox"><input data-bind="cbid:1" class="checkbox" type="checkbox" name="checkItem" checked="" value="11345721-1"></div>
 		            <div class="cell p-goods">
 		                <div class="p-img">
-		                	<a href="http://www.taotao.com/item/${cart.itemId }.html" target="_blank">
+		                	<a href="http://www.supermarket.com/item/${cart.itemId }.html" target="_blank">
 		                		<img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.itemImage}" alt="${cart.itemTitle}" width="52" height="52">
 		                	</a>
 		                </div>    
 		                <div class="p-name">
-		                	<a href="http://www.taotao.com/item/${cart.itemId }.html" clstag="clickcart|keycount|xincart|productnamelink" target="_blank">${cart.itemTitle}</a>
+		                	<a href="http://www.supermarket.com/item/${cart.itemId }.html" clstag="clickcart|keycount|xincart|productnamelink" target="_blank">${cart.itemTitle}</a>
 		                	<span class="promise411 promise411_11345721" id="promise411_11345721"></span>
 		                </div>    
 		            </div>
@@ -116,7 +116,7 @@
               <span class="shopping">
                   <b>
                   </b>
-                  <a href="http://www.taotao.com/" target="_blank" clstag="clickcart|keycount|xincart|coudanlink" id="continue">继续购物</a>
+                  <a href="http://www.supermarket.com/" target="_blank" clstag="clickcart|keycount|xincart|coudanlink" id="continue">继续购物</a>
               </span>
           </div>
           <div class="cart-total-2014">

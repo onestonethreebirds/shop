@@ -20,9 +20,10 @@
     <bean class="com.supermarket.cart.redis.impl.RedisPool" />
 
     <!-- 配置集群版的连接对象jedisCluster -->
-    <bean class="redis.clients.jedis.JedisCluster">
-        <constructor-arg name="nodes">
+  <!--  <bean class="redis.clients.jedis.JedisCluster">
+        <constructor-arg name="nodes"> -->
             <!-- 配置集群节点信息 -->
+            <!--
             <set>
                 <bean class="redis.clients.jedis.HostAndPort">
                     <constructor-arg name="host" value="${cluster1.host}" />
@@ -51,10 +52,10 @@
             </set>
 
         </constructor-arg>
-    </bean>
+    </bean> -->
 
     <!-- 配置集群版的实现 -->
-    <!-- <bean class="com.taotao.cart.redis.RedisCluster" /> -->
+    <!-- <bean class="com.supermarket.cart.redis.RedisCluster" /> -->
 
 </beans>
 

@@ -5,13 +5,13 @@ var TT = TAOTAO = {
 			return ;
 		}
 		$.ajax({
-			url : "http://sso.taotao.com/user/" + _ticket,
+			url : "http://sso.supermarket.com/user/" + _ticket,
 			dataType : "jsonp",
 			type : "GET",
 			success : function(data){
 				if(data){
 					var _data = data;
-					var html =_data.username+"，欢迎来到淘淘！<a href=\"http://www.taotao.com/user/logout.html\" class=\"link-logout\">[退出]</a>";
+					var html =_data.username+"，欢迎来到淘淘！<a href=\"http://www.supermarket.com/user/logout.html\" class=\"link-logout\">[退出]</a>";
 					$("#loginbar").html(html);
 				}
 			}

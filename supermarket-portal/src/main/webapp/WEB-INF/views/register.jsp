@@ -79,7 +79,7 @@ function addToFavorite() {
 <!--shortcut end-->
 <div class="w" id="logo">
     <div>
-    	<a href="http://www.taotao.com/">
+    	<a href="http://www.supermarket.com/">
     		<img src="/images/taotao-logo.gif" alt="京东商城" width="170" height="60"/>
     	</a> <b></b>
     </div>
@@ -96,7 +96,7 @@ function addToFavorite() {
         <span style="text-align: right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="flk13"
                                                                                onclick="javascript:location.href=&quot;http://en.360buy.com&quot;+location.search;"
                                                                                href="#">English</a></span> <span>我已经注册，现在就&nbsp;<a
-                href="http://www.taotao.com/user/login.html"
+                href="http://www.supermarket.com/user/login.html"
                 class="flk13">登录</a></span>
         </div>
     </div>
